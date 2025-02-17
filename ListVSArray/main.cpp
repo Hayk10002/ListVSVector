@@ -5,7 +5,7 @@
 #include <iomanip>
 #include <random>
 
-
+// Random number from 0 to max-1 inclusive
 int getRandomNum(int max)
 {
     static std::mt19937 engine{ std::random_device{}() };
@@ -13,6 +13,7 @@ int getRandomNum(int max)
     return dist(engine);
 }
 
+// Add number to container in sorted order
 template<class Container>
 void AddNum(Container& cont, int n)
 {
@@ -21,6 +22,7 @@ void AddNum(Container& cont, int n)
     cont.insert(it, n);
 }
 
+// Remove number from container by index
 template<class Container>
 void RemoveInd(Container& cont, int ind)
 {
@@ -29,6 +31,7 @@ void RemoveInd(Container& cont, int ind)
     cont.erase(it);
 }
 
+// Benchmarks the given function running it N times and returns the time in milliseconds
 template<class F>
 int time_ms(F f, int N)
 {
