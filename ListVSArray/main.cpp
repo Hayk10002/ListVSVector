@@ -31,7 +31,7 @@ void RemoveInd(Container& cont, int ind)
     cont.erase(it);
 }
 
-// Benchmarks the given function running it N times and returns the time in milliseconds
+// Benchmarks the given function by running it N times and returns the time in milliseconds
 template<class F>
 int time_ms(F f, int N)
 {
