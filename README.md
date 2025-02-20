@@ -33,7 +33,19 @@ $ cmake --build . --config Release
 
 Then, run the executable generated in the `build` directory.
 
+## Possible Output
+
+```
+Enter number count: 25000 
+
+         |   Add   |  Remove  |   Sum   
+---------|---------|----------|---------
+Vector   |     59ms|     153ms|    212ms
+---------|---------|----------|---------
+List     |    759ms|     643ms|   1402ms
+```
 
 ## Why `std::vector` is Faster
 In this project, we observe that `std::vector` generally performs faster than `std::list` for the `insert` and `erase` operations. This is because `std::vector` stores elements in contiguous memory, which allows for better cache locality and faster access times. Although `std::vector` may require shifting elements during insertion and deletion, the overall performance benefits from the reduced overhead of pointer manipulation and better memory access patterns compared to `std::list`, which uses a doubly linked list structure.
 This project compares the performance of the `insert` and `erase` functions for `std::vector` and `std::list` in C++.
+
