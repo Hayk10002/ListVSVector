@@ -28,7 +28,7 @@ $ cd build
 $ cmake -DCMAKE_BUILD_TYPE=Release ..
 
 # Build the project
-$ cmake --build . -config Release
+$ cmake --build . --config Release
 ```
 
 Then, run the executable generated in the `build` directory.
