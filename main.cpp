@@ -44,7 +44,7 @@ int main() {
     int N;
     std::cout << "Enter number count: ";
     std::cin >> N;
-    std::cout << std::endl;
+    std::cout << std::endl
 
     std::vector<int> v;
     std::list<int> l;
