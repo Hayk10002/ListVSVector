@@ -1,4 +1,4 @@
-# ListVSArray
+# ListVSVector
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -14,10 +14,10 @@ To clone and run this project, you'll need [Git](https://git-scm.com) and [CMake
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Hayk10002/ListVSArray
+$ git clone https://github.com/Hayk10002/ListVSVector
 
 # Go into the repository
-$ cd ListVSArray
+$ cd ListVSVector
 
 # We need to generate the executable in Release configuration to be able to observe the time difference between std::list and std::vector
 
