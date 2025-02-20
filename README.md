@@ -19,17 +19,13 @@ $ git clone https://github.com/Hayk10002/ListVSArray
 # Go into the repository
 $ cd ListVSArray
 
-# Create a build directory
-$ mkdir build
-$ cd build
-
 # We need to generate the executable in Release configuration to be able to observe the time difference between std::list and std::vector
 
 # Generate the build files
-$ cmake -DCMAKE_BUILD_TYPE=Release ..
+$ cmake -DCMAKE_BUILD_TYPE=Release -S . -B build
 
 # Build the project
-$ cmake --build . --config Release
+$ cmake --build build --config Release
 ```
 
 Then, run the executable generated in the `build` directory.
